@@ -1,7 +1,7 @@
 .btn-template(@font-size: 1.8rem, @bg-color: @btn-bg-color) {
-    width:  10rem;
-    font-size: 1.8rem;
-    padding: .9rem;
+    width:  (@font-size + .2) * 10;
+    font-size: @font-size;
+    padding: @font-size / 2;
     text-align: center;
     background-color: @bg-color;
     color: #fff - @bg-color;
@@ -9,6 +9,7 @@
 
     @media @mobile {
         width: 100%;
+        padding: (@font-size + 3.25) / 2
     }
 
     &:hover {
