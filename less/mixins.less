@@ -1,1 +1,14 @@
-// Mixins Here
+.btn-template(@font-size: 1.8rem, @bg-color: @btn-bg-color) {
+    width: 10rem;
+    font-size: 1.8rem;
+    padding: .9rem;
+    text-align: center;
+    background-color: @bg-color;
+    color: #fff - @bg-color;
+    border-radius: .5rem;
+
+    &:hover {
+        background-color: lighten(@bg-color, 15%);
+        color: darken(#fff - @bg-color, 15%);
+    }
+}
