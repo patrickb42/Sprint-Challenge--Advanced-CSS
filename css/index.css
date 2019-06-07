@@ -273,6 +273,7 @@ footer {
   background-color: #22283A;
   color: #ddd7c5;
   border-radius: 0.5rem;
+  transition: 1s;
 }
 @media (max-width: 600px) {
   .home .walk .walk-text .btn {
